@@ -1,13 +1,16 @@
-import { Stack } from '@chakra-ui/core'
+import { Flex, Box } from "@chakra-ui/core";
 
-export const Main = (props) => (
-  <Stack
-    spacing="1.5rem"
-    width="100%"
-    maxWidth="48rem"
-    mt="-45vh"
-    pt="8rem"
-    px="1rem"
-    {...props}
-  />
-)
+const Main = (props) => (
+  <Box as="main" width="100%">
+    <Box
+      spacing="1.5rem"
+      mx="auto"
+      maxWidth="1140px"
+      pt="4rem"
+      px="1rem"
+      {...props}
+    />
+  </Box>
+);
+
+export default Main;

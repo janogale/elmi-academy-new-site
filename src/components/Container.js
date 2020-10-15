@@ -1,19 +1,23 @@
-import { Flex, useColorMode } from '@chakra-ui/core'
+import { Flex, useColorMode } from "@chakra-ui/core";
 
-export const Container = (props) => {
-  const { colorMode } = useColorMode()
+const Container = (props) => {
+  const { colorMode } = useColorMode();
 
-  const bgColor = { light: 'gray.50', dark: 'gray.900' }
+  const bgColor = { light: "gray.100", dark: "gray.600" };
 
-  const color = { light: 'black', dark: 'white' }
+  const color = { light: "black", dark: "white" };
   return (
     <Flex
       direction="column"
-      alignItems="center"
-      justifyContent="flex-start"
+      mx="auto"
+      minH="100vh"
+      h="auto"
       bg={bgColor[colorMode]}
       color={color[colorMode]}
+      width="100%"
       {...props}
     />
-  )
-}
+  );
+};
+
+export default Container;
