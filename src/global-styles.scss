@@ -1,0 +1,25 @@
+// debug
+//* { outline: solid 1px rgba(238, 60, 60, 0.5); }
+
+body {
+  scrollbar-width: thin; /* "auto" or "thin"  */
+  scrollbar-color: #530d55 #530d55; /* scroll thumb & track */
+}
+.expanded {
+  width: 100vw;
+  margin-left: 49.2%;
+  transform: translateX(-50%);
+}
+
+// customize scrollbar
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #ffffff; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #530d55; /* color of the scroll thumb */
+  border-radius: 10px;
+  border: 2px solid #530d55; /* creates padding around scroll thumb */
+}

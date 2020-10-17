@@ -1,11 +1,11 @@
 import { Box, Flex, Image, Heading, Divider } from "@chakra-ui/core";
 export default function Problem() {
   return (
-    <Box bg="gray.300" py={8}>
+    <Box>
       <Heading textAlign="center" mb={8}>
         Current Problem
       </Heading>
-      <Divider mb={8} />
+
       <Flex
         justify="space-around"
         flexDirection={{ base: "column", md: "row" }}

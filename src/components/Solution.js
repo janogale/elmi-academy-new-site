@@ -5,7 +5,7 @@ export default function Problem() {
       <Heading textAlign="center" mb={8}>
         Solution
       </Heading>
-      <Divider mb={8} />
+
       <Flex
         justify="space-around"
         flexDirection={{ base: "column", md: "row" }}

@@ -1,14 +1,15 @@
-import { Flex, useColorMode } from "@chakra-ui/core";
+import { Box, useColorMode } from "@chakra-ui/core";
 
 const Container = (props) => {
   const { colorMode } = useColorMode();
 
-  const bgColor = { light: "gray.100", dark: "gray.600" };
+  const bgColor = { light: "gray.100", dark: "#0e141b" };
 
   const color = { light: "black", dark: "white" };
   return (
-    <Flex
+    <Box
       direction="column"
+      position="relative"
       mx="auto"
       minH="100vh"
       h="auto"
